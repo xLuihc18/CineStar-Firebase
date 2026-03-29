@@ -12,3 +12,5 @@ Aquí viene lo importante (Configuración manual):
 - GitHub Deploys: Dile que No (N) por ahora, ya lo subiste manual.
 
 firebase deploy
+
+Mi Pagina: https://lui-cinestar-b8f78.web.app/
