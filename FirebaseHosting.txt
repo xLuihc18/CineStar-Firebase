@@ -1,0 +1,14 @@
+npm install -g firebase-tools
+
+firebase login
+
+firebase init hosting
+
+Aquí viene lo importante (Configuración manual):
+- Project Setup: Selecciona Use an existing project.
+- Select Project: Busca en la lista lui-cinestar-b8f78.
+- Public Directory: Escribe . (un punto) si tus archivos (index.html, js/, img/) están en la raíz. Si están en una carpeta llamada public, pon public.
+- Single-page app: Dile que No (N), porque tú tienes varios archivos HTML (cines.html, pelicula.html, etc.).
+- GitHub Deploys: Dile que No (N) por ahora, ya lo subiste manual.
+
+firebase deploy
