@@ -1,0 +1,29 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyClFdPIqW0MYs6of9kiE4X98ibowUsEgPA",
+    authDomain: "lui-cinestar-b8f78.firebaseapp.com",
+    projectId: "lui-cinestar-b8f78",
+    storageBucket: "lui-cinestar-b8f78.firebasestorage.app",
+    messagingSenderId: "589391158336",
+    appId: "1:589391158336:web:82ff9243f05ef0dbfbd3a5"
+};
+
+//Inicializamos
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+
+export default db;
+
+//IMPORTACIONES
+
+import { db } from './Conexion.js';
+import { 
+    collection, 
+    getDocs, 
+    query, 
+    doc,       
+    getDoc,
+    where   
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
